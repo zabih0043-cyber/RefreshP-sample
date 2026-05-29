@@ -963,7 +963,7 @@
 @media (max-width: 768px) {
   .hero__headline { font-size: clamp(36px, 8vw, 56px); }
   .header-inner { padding: 0 10px; }
-  .hero__content { padding-left: 10px; padding-right: 10px; }
+  .hero__content { padding-left: 20px; padding-right: 20px; }
   .pillars__grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
