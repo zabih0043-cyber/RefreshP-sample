@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — RefreshP Property Updating & Dressing</title>
+  <meta name="description" content="See the RefreshP difference. Browse our portfolio of professionally refreshed and dressed properties in Manchester." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/RefreshP Logo Dark.png" alt="RefreshP" class="logo-img" />
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-right">
+        <a href="tel:03308080460" class="header-phone">0330 808 0460</a>
+        <a href="contact.html" class="btn btn-lime">Get a Quote</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="tel:03308080460" class="mobile-phone">0330 808 0460</a>
+      <a href="contact.html" class="btn btn-lime">Get a Quote</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════ PAGE HERO -->
+    <section class="gallery-hero">
+      <div class="container">
+        <div class="gallery-hero__inner">
+          <p class="eyebrow reveal-up">OUR WORK</p>
+          <h1 class="gallery-hero__headline reveal-up" style="--d:0.08s">
+            Refreshed. Dressed. Delivered.
+          </h1>
+          <div class="gallery-hero__divider reveal-up" style="--d:0.15s"></div>
+          <p class="gallery-hero__sub reveal-up" style="--d:0.22s">
+            Every image below represents a property transformed — and a client who achieved measurably better results at sale or let.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ FILTER BAR -->
+    <div class="filter-bar" id="filterBar">
+      <div class="filter-bar__inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+        <button class="filter-btn" data-filter="living">Living Rooms</button>
+        <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+        <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+        <button class="filter-btn" data-filter="full">Full Properties</button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ MASONRY GRID -->
+    <section class="gallery-section">
+      <div class="masonry-grid" id="masonryGrid">
+
+        <!-- Kitchen tiles -->
+        <div class="masonry-tile" data-category="kitchen" data-index="0">
+          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80" alt="Refreshed kitchen — Belgravia" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Belgravia Townhouse &middot; Kitchen</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile masonry-tile--tall" data-category="living" data-index="1">
+          <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80" alt="Designer living room — Chelsea" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Chelsea Apartment &middot; Living Room</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="bedroom" data-index="2">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Master bedroom — Kensington" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Kensington Flat &middot; Master Bedroom</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile masonry-tile--wide" data-category="full" data-index="3">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80" alt="Full property refresh — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Northern Quarter Apartment &middot; Full Refresh</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="bathroom" data-index="4">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Bathroom refresh — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Edgbaston Villa &middot; En-Suite</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile masonry-tile--tall" data-category="kitchen" data-index="5">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Open plan kitchen — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Spinningfields Penthouse &middot; Kitchen</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="living" data-index="6">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Living room staging — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Canary Wharf Apartment &middot; Living Room</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="bedroom" data-index="7">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" alt="Guest bedroom — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Harborne House &middot; Guest Bedroom</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile masonry-tile--wide" data-category="living" data-index="8">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80" alt="Dressed reception room — Mayfair" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Mayfair Townhouse &middot; Reception Room</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="kitchen" data-index="9">
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="Kitchen refresh — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Islington Terrace &middot; Kitchen</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+
+        <div class="masonry-tile" data-category="bathroom" data-index="11">
+          <img src="https://images.unsplash.com/photo-1750036015902-c6f5ebca924e?w=800&q=80" alt="Bathroom — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Notting Hill Apartment &middot; Bathroom</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="bedroom" data-index="12">
+          <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80" alt="Bedroom — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Didsbury House &middot; Principal Bedroom</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile masonry-tile--wide" data-category="full" data-index="13">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80" alt="Full property — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Fulham Flat &middot; Full Refresh &amp; Dress</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="kitchen" data-index="14">
+          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80" alt="Kitchen — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Moseley Villa &middot; Kitchen</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="masonry-tile" data-category="living" data-index="15">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80" alt="Living room — Manchester" loading="lazy" />
+          <div class="masonry-tile__overlay">
+            <span class="masonry-tile__label">Altrincham Townhouse &middot; Living Room</span>
+            <span class="masonry-tile__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty state -->
+      <div class="gallery-empty" id="galleryEmpty" style="display:none">
+        <p>No images in this category yet — check back soon.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ FEATURED TRANSFORMATION -->
+    <section class="featured-transform">
+      <div class="container">
+        <p class="eyebrow centered reveal-up">FEATURED TRANSFORMATION</p>
+        <h2 class="section-headline centered reveal-up" style="--d:0.06s">See the Transformation</h2>
+        <div class="lime-underline centered reveal-up" style="--d:0.12s"></div>
+      </div>
+
+      <div class="ft-slider-wrap reveal-up" style="--d:0.2s">
+        <div class="ba-slider" id="galleryBASlider">
+          <div class="ba-before">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80" alt="Before — Manchester city apartment" />
+            <span class="ba-label">Before</span>
+          </div>
+          <div class="ba-after">
+            <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1600&q=80" alt="After — Manchester city apartment" />
+            <span class="ba-label ba-label--after">After</span>
+          </div>
+          <div class="ba-handle" id="galleryBAHandle">
+            <div class="ba-handle__line"></div>
+            <div class="ba-handle__grip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="8,12 4,12" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"/>
+                <polyline points="16,12 20,12" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"/>
+                <polyline points="6,10 4,12 6,14" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="18,10 20,12 18,14" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="ft-caption reveal-up" style="--d:0.25s">
+          <strong>Manchester city centre apartment</strong> — refreshed and dressed in 14 days.
+          Re-let at 18% above the previous rental rate. Full programme included decoration,
+          furnishing, designer-led staging and professional marketing photography.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ CASE STUDY CARDS -->
+    <section class="case-studies">
+      <div class="container">
+        <p class="eyebrow centered reveal-up">CASE STUDIES</p>
+        <h2 class="section-headline centered reveal-up" style="--d:0.06s">Results that speak for themselves.</h2>
+        <div class="lime-underline centered reveal-up" style="--d:0.12s"></div>
+
+        <div class="case-grid">
+
+          <div class="case-card reveal-up" style="--d:0s">
+            <div class="case-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=700&q=80" alt="Manchester apartment case study" loading="lazy" class="case-card__img" />
+              <span class="case-card__tag">Refreshment</span>
+            </div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">City Centre Apartment, Manchester</h3>
+              <p class="case-card__result">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polyline points="2,10 6,6 10,9 14,4" stroke="#C8D72E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Re-let at 18% above prior rate &middot; 4 days
+              </p>
+              <p class="case-card__summary">Vacant for 10 weeks before we stepped in. Refreshed and re-dressed in 14 days. New tenants in within the week.</p>
+              <a href="contact.html" class="case-card__link">Book a consultation <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <div class="case-card reveal-up" style="--d:0.1s">
+            <div class="case-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700&q=80" alt="Salford development case study" loading="lazy" class="case-card__img" />
+              <span class="case-card__tag">Full Property</span>
+            </div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Salford Quays Development, Manchester</h3>
+              <p class="case-card__result">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polyline points="2,10 6,6 10,9 14,4" stroke="#C8D72E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Let within 5 days &middot; 3-week turnaround
+              </p>
+              <p class="case-card__summary">Full refresh and dress programme — decoration, furnishing, staging and professional photography ahead of re-letting.</p>
+              <a href="contact.html" class="case-card__link">Book a consultation <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <div class="case-card reveal-up" style="--d:0.2s">
+            <div class="case-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80" alt="Manchester portfolio case study" loading="lazy" class="case-card__img" />
+              <span class="case-card__tag">Assessment + Refresh</span>
+            </div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Portfolio Landlord, Greater Manchester</h3>
+              <p class="case-card__result">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polyline points="2,10 6,6 10,9 14,4" stroke="#C8D72E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Portfolio rental yield +14% &middot; 3 properties
+              </p>
+              <p class="case-card__summary">Portfolio landlord with 3 properties — assessment, prioritised works and ongoing quarterly inspection service.</p>
+              <a href="contact.html" class="case-card__link">Book a consultation <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ CTA BAND -->
+    <section class="gallery-cta-band">
+      <div class="container">
+        <div class="gallery-cta-band__inner reveal-up">
+          <h2 class="gallery-cta-band__headline">Your property could be next.</h2>
+          <div class="gallery-cta-band__line"></div>
+          <a href="contact.html" class="btn btn-lime btn--large">Start Your Refresh</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════ LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15,18 9,12 15,6"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9,18 15,12 9,6"/></svg>
+    </button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+    </div>
+    <div class="lightbox__footer">
+      <span class="lightbox__label" id="lightboxLabel"></span>
+      <span class="lightbox__counter" id="lightboxCounter"></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col--brand">
+          <div class="footer-logo-wrap">
+            <img src="assets/RefreshP Logo Dark.png" alt="RefreshP" class="footer-logo" />
+          </div>
+          <p class="footer-tagline">Property Updating &amp; Dressing.<br />Maximising value in Manchester.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Contact</h4>
+          <ul class="footer-contact">
+            <li><a href="tel:03308080460">0330 808 0460</a></li>
+            <li><a href="mailto:dh@refreshp.com">dh@refreshp.com</a></li>
+            <li><a href="https://www.refreshp.com">www.refreshp.com</a></li>
+          </ul>
+          <p class="footer-cities">Manchester</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RefreshP. All rights reserved.</p>
+        <p class="powered-by">Powered by
+          <a href="https://digitalzp.com" class="powered-by-logo" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="12" viewBox="0 0 18 16" fill="none" aria-hidden="true">
+              <rect x="0" y="0" width="8" height="8" rx="2" fill="#38BDF8"/>
+              <rect x="10" y="8" width="8" height="8" rx="2" fill="#38BDF8" fill-opacity="0.55"/>
+            </svg>
+            <span>Digital<span class="powered-by-zp">ZP</span></span>
+          </a>
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/03308080460" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/before-after.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

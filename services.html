@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — RefreshP Property Updating & Dressing</title>
+  <meta name="description" content="RefreshP offers end-to-end property services: Assessment, Refreshment and Reassessment in Manchester." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/RefreshP Logo Dark.png" alt="RefreshP" class="logo-img" />
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-right">
+        <a href="tel:03308080460" class="header-phone">0330 808 0460</a>
+        <a href="contact.html" class="btn btn-lime">Get a Quote</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="tel:03308080460" class="mobile-phone">0330 808 0460</a>
+      <a href="contact.html" class="btn btn-lime">Get a Quote</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════ PAGE HERO -->
+    <section class="page-hero page-hero--services">
+      <div class="page-hero__bg"></div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <p class="eyebrow reveal-up">OUR SERVICES</p>
+          <h1 class="page-hero__headline reveal-up" style="--d:0.08s">
+            A complete, end-to-end<br />property service.
+          </h1>
+          <div class="page-hero__divider reveal-up" style="--d:0.16s"></div>
+          <p class="page-hero__sub reveal-up" style="--d:0.22s">
+            From first inspection to final dressing — we manage every stage so you don't have to.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ SERVICE NAVIGATOR -->
+    <div class="service-nav" id="serviceNav">
+      <div class="service-nav__inner">
+        <button class="service-nav__pill active" data-target="assessment">Assessment</button>
+        <button class="service-nav__pill" data-target="refreshment">Refreshment</button>
+        <button class="service-nav__pill" data-target="reassessment">Reassessment</button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ ASSESSMENT -->
+    <section class="service-section" id="assessment">
+      <div class="container">
+        <div class="service-split service-split--img-left">
+
+          <div class="service-split__media reveal-up">
+            <div class="service-split__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80"
+                alt="Property assessment and inspection"
+                class="service-split__img"
+              />
+              <div class="service-split__number">01</div>
+            </div>
+          </div>
+
+          <div class="service-split__text reveal-up" style="--d:0.12s">
+            <p class="eyebrow">01 / ASSESSMENT</p>
+            <h2 class="service-split__headline">Know exactly what<br />your property needs.</h2>
+            <p class="service-split__body">
+              Every successful refresh begins with an honest, thorough assessment. Our team conducts a comprehensive walkthrough, documents the current condition of every room and fixture, and produces a clear, prioritised schedule of works — with full transparent costing before anything begins.
+              <br /><br />
+              Where white goods require updating or replacement, we manage the entire process — sourcing, delivery, and installation — leaving nothing to chance.
+            </p>
+            <ul class="service-checklist">
+              <li>Full property walkthrough &amp; room-by-room review</li>
+              <li>Detailed condition report with photographic evidence</li>
+              <li>Inventory documentation &amp; updates</li>
+              <li>White goods assessment &amp; replacement where required</li>
+              <li>Transparent costed schedule, approved before works begin</li>
+            </ul>
+            <a href="contact.html" class="service-cta-link">Book an assessment <span class="arrow">→</span></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ REFRESHMENT -->
+    <section class="service-section service-section--alt" id="refreshment">
+      <div class="container">
+        <div class="service-split service-split--img-right">
+
+          <div class="service-split__text reveal-up">
+            <p class="eyebrow">02 / REFRESHMENT</p>
+            <h2 class="service-split__headline">Turn potential<br />into performance.</h2>
+            <p class="service-split__body">
+              Our Refreshment programme transforms a tired or vacant property into a market-ready asset. From structural repairs and fresh decoration through to bespoke furnishing and designer-led staging, we handle every discipline — so you don't need to coordinate multiple contractors.
+              <br /><br />
+              We finish every project with professional marketing photography, ensuring your property is presented at its absolute best the moment it goes live.
+            </p>
+            <ul class="service-checklist">
+              <li>Maintenance, repairs &amp; structural remediation</li>
+              <li>Decoration — painting, tiling, flooring &amp; finishing</li>
+              <li>Furnishing &amp; professional deep cleaning</li>
+              <li>Interior designer-led dressing &amp; staging</li>
+              <li>High-quality marketing photography</li>
+            </ul>
+            <a href="contact.html" class="service-cta-link">Start your refresh <span class="arrow">→</span></a>
+          </div>
+
+          <div class="service-split__media reveal-up" style="--d:0.12s">
+            <div class="service-split__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=900&q=80"
+                alt="Beautifully refreshed property interior"
+                class="service-split__img"
+              />
+              <div class="service-split__number">02</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ REASSESSMENT -->
+    <section class="service-section" id="reassessment">
+      <div class="container">
+        <div class="service-split service-split--img-left">
+
+          <div class="service-split__media reveal-up">
+            <div class="service-split__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80"
+                alt="Property reassessment and inspection"
+                class="service-split__img"
+              />
+              <div class="service-split__number">03</div>
+            </div>
+          </div>
+
+          <div class="service-split__text reveal-up" style="--d:0.12s">
+            <p class="eyebrow">03 / REASSESSMENT</p>
+            <h2 class="service-split__headline">Maintain the value<br />you've built.</h2>
+            <p class="service-split__body">
+              Protecting long-term property value requires ongoing attention. Our Reassessment service provides scheduled monthly or quarterly inspections, cleaning, and maintenance visits — giving landlords and owners complete peace of mind between tenancies.
+              <br /><br />
+              At end-of-tenancy, we manage the full transition: inspection, dispute-ready reports, clearance, deep cleaning, and re-dressing — so your property is ready for the next tenant without delay.
+            </p>
+            <ul class="service-checklist">
+              <li>Monthly or quarterly property inspections</li>
+              <li>Ongoing professional cleaning schedule</li>
+              <li>End-of-tenancy inspection &amp; condition report</li>
+              <li>Full property clearance &amp; deep cleaning</li>
+              <li>Re-dressing &amp; staging for the next let</li>
+            </ul>
+            <a href="contact.html" class="service-cta-link">Arrange ongoing care <span class="arrow">→</span></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ TIMELINE -->
+    <section class="timeline-section">
+      <div class="container">
+        <p class="eyebrow centered reveal-up">THE PROCESS</p>
+        <h2 class="section-headline centered reveal-up" style="--d:0.06s">How it works</h2>
+        <div class="lime-underline centered reveal-up" style="--d:0.12s"></div>
+      </div>
+
+      <div class="timeline-wrap reveal-up" style="--d:0.2s">
+        <div class="timeline" id="timeline">
+          <div class="timeline__track">
+            <div class="timeline__line" id="timelineLine"></div>
+          </div>
+          <div class="timeline__nodes">
+
+            <div class="timeline__node">
+              <div class="timeline__dot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="timeline__label">
+                <span class="timeline__step">Step 01</span>
+                <span class="timeline__name">Enquire</span>
+                <span class="timeline__desc">Tell us about your property and goals</span>
+              </div>
+            </div>
+
+            <div class="timeline__node">
+              <div class="timeline__dot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="8" y1="8" x2="16" y2="8" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="8" y1="16" x2="12" y2="16" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="timeline__label">
+                <span class="timeline__step">Step 02</span>
+                <span class="timeline__name">Assess</span>
+                <span class="timeline__desc">Full inspection and condition report</span>
+              </div>
+            </div>
+
+            <div class="timeline__node">
+              <div class="timeline__dot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="timeline__label">
+                <span class="timeline__step">Step 03</span>
+                <span class="timeline__name">Plan</span>
+                <span class="timeline__desc">Costed schedule, approved by you</span>
+              </div>
+            </div>
+
+            <div class="timeline__node">
+              <div class="timeline__dot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M9 22V12h6v10" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="timeline__label">
+                <span class="timeline__step">Step 04</span>
+                <span class="timeline__name">Refresh</span>
+                <span class="timeline__desc">Works managed end-to-end</span>
+              </div>
+            </div>
+
+            <div class="timeline__node">
+              <div class="timeline__dot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="timeline__label">
+                <span class="timeline__step">Step 05</span>
+                <span class="timeline__name">Reassess</span>
+                <span class="timeline__desc">Ongoing care &amp; maintenance</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ PROCESS NOTE -->
+    <section class="process-note">
+      <div class="container">
+        <div class="process-note__card reveal-up">
+          <div class="process-note__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="20" stroke="#C8D72E" stroke-width="1.5"/>
+              <path d="M24 16v8l6 3" stroke="#C8D72E" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 34l2-4 4 2-2 4-4-2z" stroke="#C8D72E" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M28 10l4 2-1 3-4-2 1-3z" stroke="#C8D72E" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="process-note__headline">Transparent costs. No surprises.</h3>
+          <p class="process-note__body">
+            Every project begins with a clear schedule of prioritised works and transparent costing.
+            You approve before we begin — and we manage the entire process through to completion,
+            keeping you informed at every stage. There are no hidden charges, no unexpected extras,
+            and no delays caused by third-party coordination.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ CTA BAND -->
+    <section class="services-cta-band">
+      <div class="container">
+        <div class="services-cta-band__inner reveal-up">
+          <h2 class="services-cta-band__headline">Not sure which service fits?</h2>
+          <p class="services-cta-band__sub">
+            Our team will help you identify exactly what your property needs in a free, no-obligation call.
+          </p>
+          <div class="services-cta-band__btns">
+            <a href="contact.html" class="btn btn-lime btn--large">Book a free call</a>
+            <a href="contact.html?quote=1" class="btn btn-ghost-dark btn--large">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col--brand">
+          <div class="footer-logo-wrap">
+            <img src="assets/RefreshP Logo Dark.png" alt="RefreshP" class="footer-logo" />
+          </div>
+          <p class="footer-tagline">Property Updating &amp; Dressing.<br />Maximising value in Manchester.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Contact</h4>
+          <ul class="footer-contact">
+            <li><a href="tel:03308080460">0330 808 0460</a></li>
+            <li><a href="mailto:dh@refreshp.com">dh@refreshp.com</a></li>
+            <li><a href="https://www.refreshp.com">www.refreshp.com</a></li>
+          </ul>
+          <p class="footer-cities">Manchester</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RefreshP. All rights reserved.</p>
+        <p class="powered-by">Powered by
+          <a href="https://digitalzp.com" class="powered-by-logo" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="12" viewBox="0 0 18 16" fill="none" aria-hidden="true">
+              <rect x="0" y="0" width="8" height="8" rx="2" fill="#38BDF8"/>
+              <rect x="10" y="8" width="8" height="8" rx="2" fill="#38BDF8" fill-opacity="0.55"/>
+            </svg>
+            <span>Digital<span class="powered-by-zp">ZP</span></span>
+          </a>
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/03308080460" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* ═══════════════════════════════════════════════════════════
+   RefreshP — Design Tokens
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Colours */
+  --black:       #0A0A0A;
+  --charcoal:    #1A1A1A;
+  --lime:        #C8D72E;
+  --lime-dark:   #a8b520;
+  --offwhite:    #FAFAF7;
+  --grey:        #6B6B6B;
+  --border:      #E5E5E2;
+  --white:       #FFFFFF;
+
+  /* Typography */
+  --font-serif:  'Cormorant Garamond', Georgia, serif;
+  --font-sans:   'Inter', 'Helvetica Neue', sans-serif;
+
+  /* Layout */
+  --max-w:       1280px;
+  --pad-x:       clamp(24px, 5vw, 80px);
+  --section-pad: clamp(80px, 10vw, 160px);
+
+  /* Easing */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+}
