@@ -962,6 +962,8 @@
 }
 @media (max-width: 768px) {
   .hero__headline { font-size: clamp(36px, 8vw, 56px); }
+  .header-inner { padding: 0 20px; }
+  .hero__content { padding-left: 20px; padding-right: 20px; }
   .pillars__grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -970,7 +972,7 @@
   .end-to-end { flex-direction: column; }
 }
 @media (max-width: 480px) {
-  .hero__ctas { flex-direction: column; align-items: center; }
+  .hero__ctas { flex-direction: column; align-items: flex-start; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .ba-tabs { max-width: 100%; margin: 0 var(--pad-x) 32px; }
 }
