@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Legacy root-level files (superseded by css/ and js/ folders)
+about.css
+contact.css
+gallery.css
+services.css
+styles.css
+about.js
+contact.js
+gallery.js
+services.js
+script.js
